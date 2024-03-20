@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .profile {
+        order: 1;
+        flex: 1;
+      }
+
+      .post-text-box {
+        order: 2;
+        flex: 3;
+      }
+
+      @media (max-width: 700px) {
+        .profile,
+        .post-text-box {
+          flex: 1;
+          order: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <h1>John Doe</h1>
+        <img src="https://via.placeholder.com/150" alt="profile picture" />
+      </div>
+      <div class="post-text-box">
+        <h1>My First Post</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
